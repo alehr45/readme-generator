@@ -1,13 +1,42 @@
-// TODO: Include packages needed for this application
+const inquirer = require("inquirer");
+const fs = require("fs");
 
-// TODO: Create an array of questions for user input
-const questions = [];
+function promptUser() {
+    return inquirer.prompt([
+        {
+      type: "input",
+      message: "Whats the Project title?",
+      name: "title",
+    
+    },
+    {
+        type: "input",
+        message: "Enter a description of your project.",
+        name: "description",
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+    },
+    {
 
-// TODO: Create a function to initialize app
-function init() {}
+        type: "input",
+        message: "What are the installation instructions for this project?",
+        name: "install",
 
-// Function call to initialize app
-init();
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+])};
+   
+
+promptUser();
+
+
