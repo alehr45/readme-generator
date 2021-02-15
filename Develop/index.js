@@ -1,5 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const util = require("util");
+const writeFile = util.promisify(fs.writeFile);
 
 function promptUser() {
   return inquirer.prompt([
@@ -20,7 +22,7 @@ function promptUser() {
     },
     {
       type: "input",
-      message: "How should your app be used?",
+      message: "How should your application or website be used?",
       name: "usage",
     },
     {
@@ -52,4 +54,29 @@ function promptUser() {
   ]);
 }
 
-promptUser();
+function createMarkdown(response) {
+  return `
+# ${response.title}
+
+## Description
+${response.description}
+
+## Installation
+${response.install}
+
+
+`;
+};
+
+async function makeReadme() {
+  try {
+    const response = await promptUser();
+    const readme = createMarkdown(response);
+    await writeFile("ReadMe.md", readme);
+    console.log("Your Readme file has been generated! Congratulations!");
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+makeReadme();
