@@ -64,9 +64,12 @@ ${response.description}
 ## Installation
 ${response.install}
 
+## Usage
+${response.usage}
+
 
 `;
-};
+}
 
 async function makeReadme() {
   try {
@@ -77,6 +80,6 @@ async function makeReadme() {
   } catch (err) {
     console.log(err);
   }
-};
+}
 
 makeReadme();
