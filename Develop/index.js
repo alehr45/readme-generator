@@ -38,7 +38,7 @@ function promptUser() {
     {
       type: "checkbox",
       message: "Please select a license for this project.",
-      choices: ["Mozilla", "Apache", "MIT", "GNU AGPLv3", "Boost", "Other"],
+      choices: ["Mozilla", "Apache", "MIT", "GNU AGPLv3"],
       name: "license",
     },
     {
@@ -67,9 +67,26 @@ ${response.install}
 ## Usage
 ${response.usage}
 
+## Contributors
+${response.contribution}
 
-`;
-}
+## Testing Instructions
+${response.test}
+
+## Licenses Used
+${response.license}
+
+## Github Username
+${response.github}
+
+## My Contact Info
+${response.email}
+www.github.com/${response.github}
+
+
+
+`
+};
 
 async function makeReadme() {
   try {
@@ -78,8 +95,8 @@ async function makeReadme() {
     await writeFile("ReadMe.md", readme);
     console.log("Your Readme file has been generated! Congratulations!");
   } catch (err) {
-    console.log(err);
+    console.log("err");
   }
-}
+};
 
 makeReadme();

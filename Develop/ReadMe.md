@@ -1,13 +1,30 @@
 
-# Alexs Readme Generator
+# Alex's Readme Generator
 
 ## Description
-a quick and easy to use readme gen
+Makes a quick, professional Readme file for your project!
 
 ## Installation
-none
+Open console and move to app directory. Then type node index.js.
 
 ## Usage
-askjdbh
+To make quick user generated Readme files.
+
+## Contributors
+Alex Lehr
+
+## Testing Instructions
+None
+
+## Licenses Used
+MIT
+
+## Github Username
+alehr45
+
+## My Contact Info
+alehr45@gmail.com
+www.github.com/alehr45
+
 
 
