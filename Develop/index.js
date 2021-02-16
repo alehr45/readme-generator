@@ -11,10 +11,21 @@ function promptUser() {
       name: "title",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid project title is required.");
+          return console.log("A valid project title is required.");
         }
         return true;
-    }
+      },
+    },
+    {
+      type: "input",
+      message: "What is the name of your GitHub repository??",
+      name: "repo",
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("A valid repository name is required.");
+        }
+        return true;
+      },
     },
     {
       type: "input",
@@ -22,10 +33,10 @@ function promptUser() {
       name: "description",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid project description is required.");
+          return console.log("A valid project description is required.");
         }
         return true;
-    }
+      },
     },
     {
       type: "input",
@@ -33,10 +44,12 @@ function promptUser() {
       name: "install",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid project installation instruction is required.");
+          return console.log(
+            "A valid project installation instruction is required."
+          );
         }
         return true;
-    }
+      },
     },
     {
       type: "input",
@@ -44,10 +57,10 @@ function promptUser() {
       name: "usage",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid usage instruction is required.");
+          return console.log("A valid usage instruction is required.");
         }
         return true;
-    }
+      },
     },
     {
       type: "input",
@@ -55,10 +68,10 @@ function promptUser() {
       name: "contribution",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid contributor is required.");
+          return console.log("A valid contributor is required.");
         }
         return true;
-    }
+      },
     },
     {
       type: "input",
@@ -66,25 +79,24 @@ function promptUser() {
       name: "test",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid test instruction is required.");
+          return console.log("A valid test instruction is required.");
         }
         return true;
-    }
+      },
     },
     {
       type: "checkbox",
-      message: "Please select your license for this project.",
+      message: "Please select a license for this project.",
       choices: ["Mozilla", "Apache", "MIT", "Boost"],
       name: "license",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid license is required.");
-            }
-            if (answer.length > 1) {
-              return console.log("A valid license is required.");
-              }
-        return true;
-    }
+          return console.log("A valid license is required.");
+        }
+        if (answer.length > 1) {
+          return console.log("A valid license is required.");
+        } else return true;
+      },
     },
     {
       type: "input",
@@ -92,10 +104,10 @@ function promptUser() {
       name: "github",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid GitHub username is required.");
+          return console.log("A valid GitHub username is required.");
         }
         return true;
-    }
+      },
     },
     {
       type: "input",
@@ -103,10 +115,10 @@ function promptUser() {
       name: "email",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("A valid email address is required.");
+          return console.log("A valid email address is required.");
         }
         return true;
-    }
+      },
     },
   ]);
 }
@@ -114,6 +126,7 @@ function promptUser() {
 function createMarkdown(response) {
   return `
 # ${response.title}
+
 
 ## **Table of Contents**
 ========================
@@ -126,34 +139,38 @@ function createMarkdown(response) {
 
 ========================
 
-### **Description**
+### **Repository Name**  
+${response.repo}
+
+### **Description**  
 ${response.description}
 
-### **Installation**
+### **Installation**  
 ${response.install}
 
-### **Usage**
+### **Usage**  
 ${response.usage}
 
-### **Contributors**
+### **Contributors**  
 ${response.contribution}
 
-### **Testing**
+### **Testing**  
 ${response.test}
 
-### **License**
+### **License**  
 ![badge](https://img.shields.io/badge/license-${response.license}-brightgreen)  
 
 This application is covered by the ${response.license} license. 
 
 ========================
+
 ### Questions?
 ##### Email: ${response.email}
-##### GitHub: www.github.com/${response.github}
+##### GitHub: www.github.com/${response.github}  
 
 ========================
-`
-};
+`;
+}
 
 async function makeReadme() {
   try {
@@ -164,7 +181,6 @@ async function makeReadme() {
   } catch (err) {
     console.log("Something went wrong!");
   }
-};
-
+}
 
 makeReadme();
