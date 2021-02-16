@@ -9,47 +9,104 @@ function promptUser() {
       type: "input",
       message: "What is the project title?",
       name: "title",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid project title is required.");
+        }
+        return true;
+    }
     },
     {
       type: "input",
       message: "Enter a description of your project.",
       name: "description",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid project description is required.");
+        }
+        return true;
+    }
     },
     {
       type: "input",
       message: "What are the installation instructions for this project?",
       name: "install",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid project installation instruction is required.");
+        }
+        return true;
+    }
     },
     {
       type: "input",
       message: "How should your application or website be used?",
       name: "usage",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid usage instruction is required.");
+        }
+        return true;
+    }
     },
     {
       type: "input",
       message: "Who were the contributors for this project",
       name: "contribution",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid contributor is required.");
+        }
+        return true;
+    }
     },
     {
       type: "input",
       message: "What are the test instructions for this project?",
       name: "test",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid test instruction is required.");
+        }
+        return true;
+    }
     },
     {
       type: "checkbox",
-      message: "Please select a license for this project.",
-      choices: ["Mozilla", "Apache", "MIT", "GNU AGPLv3"],
+      message: "Please select your license for this project.",
+      choices: ["Mozilla", "Apache", "MIT", "Boost"],
       name: "license",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid license is required.");
+            }
+            if (answer.length > 1) {
+              return console.log("A valid license is required.");
+              }
+        return true;
+    }
     },
     {
       type: "input",
       message: "What is your GitHub username?",
       name: "github",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid GitHub username is required.");
+        }
+        return true;
+    }
     },
     {
       type: "input",
       message: "What is your email address?",
       name: "email",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid email address is required.");
+        }
+        return true;
+    }
     },
   ]);
 }
@@ -84,8 +141,10 @@ ${response.contribution}
 ### **Testing**
 ${response.test}
 
-### **Licenses**
-${response.license}
+### **License**
+![badge](https://img.shields.io/badge/license-${response.license}-brightgreen)  
+
+This application is covered by the ${response.license} license. 
 
 ========================
 ### Questions?
@@ -106,5 +165,6 @@ async function makeReadme() {
     console.log("Something went wrong!");
   }
 };
+
 
 makeReadme();
