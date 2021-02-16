@@ -58,33 +58,41 @@ function createMarkdown(response) {
   return `
 # ${response.title}
 
-## Description
+## **Table of Contents**
+========================
+* [Description](#description)
+* [Installation](#installation)
+* [Contributors](#contributors)
+* [Testing](#Testing)
+* [Licensing](#Licenses)
+* [Contact](#questions)
+
+========================
+
+### **Description**
 ${response.description}
 
-## Installation
+### **Installation**
 ${response.install}
 
-## Usage
+### **Usage**
 ${response.usage}
 
-## Contributors
+### **Contributors**
 ${response.contribution}
 
-## Testing Instructions
+### **Testing**
 ${response.test}
 
-## Licenses Used
+### **Licenses**
 ${response.license}
 
-## Github Username
-${response.github}
+========================
+### Questions?
+##### Email: ${response.email}
+##### GitHub: www.github.com/${response.github}
 
-## My Contact Info
-${response.email}
-www.github.com/${response.github}
-
-
-
+========================
 `
 };
 
@@ -95,7 +103,7 @@ async function makeReadme() {
     await writeFile("ReadMe.md", readme);
     console.log("Your Readme file has been generated! Congratulations!");
   } catch (err) {
-    console.log("err");
+    console.log("Something went wrong!");
   }
 };
 
