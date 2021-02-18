@@ -1,5 +1,5 @@
 
-# My Readme Generator
+# Alex's Readme Generator
 
 
 ## **Table of Contents**
@@ -17,24 +17,24 @@
 readme-generator
 
 ### **Description**  
-A quick and professional generator that compiles user input and generates a Readme for your current project.
+Fusce viverra orci mauris, eu molestie quam consequat in. Morbi malesuada orci lectus, non varius ante aliquet ut. Morbi mattis est id dolor ullamcorper, sit amet viverra velit gravida. Integer gravida urna dolor. Curabitur congue eu nunc sed imperdiet. Ut interdum mauris sit amet augue eleifend dignissim. Suspendisse varius pellentesque velit, nec dictum libero vestibulum commodo. Nulla ac ultricies nibh, ac dictum felis.
 
 ### **Installation**  
-First you need to clone the repository to your local computer. Then, within the terminal, navigate to the readme-generator directory you just cloned. In the terminal type node index.js to start the Readme generator. Answer all the prompted questions. When completed you will recieve a notification that the Readme file has been created. You can find it in the readme-generator directory. Congrats on creating your custom Readme!
+Nulla ut sagittis est. Vivamus semper ligula purus, eget ullamcorper nibh vehicula sit amet. Integer lorem lorem, pellentesque vitae pharetra sed, sodales in ipsum. Morbi at molestie ligula. Suspendisse auctor, massa sed mattis feugiat, ligula lorem sagittis sapien, id dapibus nulla turpis vitae ex. Donec quis pharetra orci. Morbi tristique quis elit in mattis. Nunc pulvinar dolor turpis, et feugiat massa pretium et.
 
 ### **Usage**  
-This generator should be used to create a professional Readme for any application or website you develop. 
+Ut posuere convallis nibh non cursus. Vivamus nec laoreet tellus, eu luctus nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin consectetur tempus. In at nunc eget mauris bibendum rhoncus vitae et felis. Ut faucibus semper dolor ut elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce porttitor justo in lectus bibendum, eget porta elit fermentum. Praesent non porttitor ipsum. Vestibulum laoreet nec diam a vehicula. Nunc venenatis massa finibus dictum sagittis. Aliquam malesuada sem eu dapibus ultricies. Phasellus ut fermentum nibh.
 
 ### **Contributors**  
-Me (@alehr45)
+Myself
 
 ### **Testing**  
 N/A
 
 ### **License**  
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)  
+![badge](https://img.shields.io/badge/license-Mozilla-brightgreen)  
 
-This application is covered by the MIT license. 
+This application is covered by the Mozilla license. 
 
 ========================
 
