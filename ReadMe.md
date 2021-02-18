@@ -18,17 +18,14 @@
 
 ![alt text](/screenshot2.png)
 
-
-
-
 ### **Repository Name**  
 readme-generator
 
 ### **Description**  
-Fusce viverra orci mauris, eu molestie quam consequat in. Morbi malesuada orci lectus, non varius ante aliquet ut. Morbi mattis est id dolor ullamcorper, sit amet viverra velit gravida. Integer gravida urna dolor. Curabitur congue eu nunc sed imperdiet. Ut interdum mauris sit amet augue eleifend dignissim. Suspendisse varius pellentesque velit, nec dictum libero vestibulum commodo. Nulla ac ultricies nibh, ac dictum felis.
+A quick and professional generator that compiles user input and generates a Readme for your current project.
 
 ### **Installation**  
-Nulla ut sagittis est. Vivamus semper ligula purus, eget ullamcorper nibh vehicula sit amet. Integer lorem lorem, pellentesque vitae pharetra sed, sodales in ipsum. Morbi at molestie ligula. Suspendisse auctor, massa sed mattis feugiat, ligula lorem sagittis sapien, id dapibus nulla turpis vitae ex. Donec quis pharetra orci. Morbi tristique quis elit in mattis. Nunc pulvinar dolor turpis, et feugiat massa pretium et.
+First you need to clone the repository to your local computer. Then, within the terminal, navigate to the readme-generator directory you just cloned. In the terminal type node index.js to start the Readme generator. Answer all the prompted questions. When completed you will recieve a notification that the Readme file has been created. You can find it in the readme-generator directory. Congrats on creating your custom Readme!
 
 ### **Usage**  
 https://drive.google.com/file/d/1FleJQ8bON66Vu8cSOGo3UQ_2GL5eXGtu/view
