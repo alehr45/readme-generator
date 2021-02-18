@@ -1,5 +1,5 @@
 
-# sdnfs
+# My Readme Generator
 
 
 ## **Table of Contents**
@@ -14,32 +14,32 @@
 ========================
 
 ### **Repository Name**  
-sdfjhsbdf
+readme-generator
 
 ### **Description**  
-sdfjshdbfs
+A quick and professional generator that compiles user input and generates a Readme for your current project.
 
 ### **Installation**  
-dfsjdfvs
+First you need to clone the repository to your local computer. Then, within the terminal, navigate to the readme-generator directory you just cloned. In the terminal type node index.js to start the Readme generator. Answer all the prompted questions. When completed you will recieve a notification that the Readme file has been created. You can find it in the readme-generator directory. Congrats on creating your custom Readme!
 
 ### **Usage**  
-dfsjdfvs
+This generator should be used to create a professional Readme for any application or website you develop. 
 
 ### **Contributors**  
-dfsjdgfvs
+Me (@alehr45)
 
 ### **Testing**  
-dfhsgdvfs
+N/A
 
 ### **License**  
-![badge](https://img.shields.io/badge/license-Mozilla-brightgreen)  
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)  
 
-This application is covered by the Mozilla license. 
+This application is covered by the MIT license. 
 
 ========================
 
 ### Questions?
-##### Email: sdf
-##### GitHub: www.github.com/sdfs  
+##### Email: alehr45@gmail.com
+##### GitHub: www.github.com/alehr45  
 
 ========================
