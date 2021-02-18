@@ -4,6 +4,7 @@
 
 ## **Table of Contents**
 ========================
+* [Screenshots](#screenshots)
 * [Description](#description)
 * [Installation](#installation)
 * [Contributors](#contributors)
