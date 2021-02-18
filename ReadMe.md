@@ -13,8 +13,8 @@
 
 ========================
 ### **Screenshots**
-![alt text](./screenshot1.img)
-![alt text](./screenshot2.img)
+![alt text](/screenshot1)
+
 
 
 
